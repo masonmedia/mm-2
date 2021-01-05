@@ -21,7 +21,7 @@ export default function Home({data}) {
           {/* <img src="https://images.pexels.com/photos/3864610/pexels-photo-3864610.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" className="img-full h-100 absolute left top z-0" style={{filter: 'brightness(.40)'}} /> */}
           {/* <img src="https://images.pexels.com/photos/66997/pexels-photo-66997.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" className="img-full h-100 absolute left top z-0" style={{filter: 'brightness(.30)'}} /> */}
           <Col sm={12} lg={12}
-          className="flex-center-bottom p-5">
+          className="flex-center-bottom p-5 mb-5">
             <Fade top>
               <h1 className="site-title sunset-text text-lowercase text-shadow px-3 pt-3">masonmedia</h1>
               <p className="h3 text-light mb-5" style={{lineHeight: '80%'}}>design. development. copywriting.</p>

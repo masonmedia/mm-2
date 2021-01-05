@@ -10,7 +10,8 @@
 @import "./projects.scss";
 @import "./design.scss";
 
-body {
+body,
+main {
     overflow-x: hidden;
     width: 100%;
     max-width: 100%;
