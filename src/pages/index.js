@@ -179,7 +179,7 @@ export default function Home({data}) {
           className="flex-center-bottom p-5">
             <Fade bottom>
             <h5 className="font-weight-bold text-muted bg-light">tech stack</h5>
-            <h1 className="font-weight-bold bg-light">This site is built with React, Gatsby, React-Bootstrap, SASS, and React-Reveal. It also uses APIs from Github and Cloudinary.</h1>
+            <h1 className="font-weight-bold bg-light">This site was built with React, Gatsby, React-Bootstrap, SASS, and React-Reveal. It also uses APIs from Github and Cloudinary.</h1>
             <a href="mailto:andrewmasonmedia@gmail.com">
                 <Button variant="dark" className="mt-2">Get in touch</Button>
               </a>
