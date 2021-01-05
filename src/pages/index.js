@@ -4,7 +4,7 @@ import Layout from "../components/Layout";
 import { Row, Col, Button } from "react-bootstrap";
 import Img from "gatsby-image";
 import { Link } from "gatsby"
-import {Fade, Slide} from 'react-reveal'; 
+import {Fade, Zoom} from 'react-reveal'; 
 
 export default function Home({data}) {
   return (
@@ -43,19 +43,20 @@ export default function Home({data}) {
           </Col>
         </Row> */}
         
-        <Row className="min-h-100 p-0 m-0">
+        <Row className="min-h-100 p-0 m-0 relative">
           <Col lg={12}
-          className="flex-left p-5 sunset-text">
-            {/* <Fade bottom> */}
+          className="flex-left p-5">
+            <Fade bottom>
+              <div className="absolute z-0 left top h-100 w-100 bg-texture"></div>
             <h5 className="font-weight-bold pb-5">intro</h5>
-            <h1 className="section-text-bg my-auto py-3">
-             Hi, I'm Andrew.<span className="d-table">I'm a passionate</span> frontend developer, visual designer,copywriter and musician.
+            <h1 className="section-text-bg my-auto py-3">Hi, I'm Andrew. <span className="d-table">I'm a passionate frontend developer, visual designer,copywriter and musician.</span>
              </h1>
             <h5 className="font-weight-bold pt-5">01</h5>
-            {/* </Fade> */}
+            </Fade>
           </Col>
         </Row>
 
+        <Fade>
         <Row className="min-h-100 p-0 m-0 relative">
           {/* cloudinary */}
           {/* <img className="img-full absolute -left z-0" src="https://res.cloudinary.com/masonmedia/image/upload/e_gamma:0/v1607799000/sample.jpg" /> */}
@@ -77,9 +78,11 @@ export default function Home({data}) {
             </Fade>
           </Col>
         </Row>
+        </Fade>
         
         {/* development2 */}
 
+        <Fade bottom>
         <Row className="min-h-100 p-0 m-0 relative">
           <Img 
           className="img-full h-100" 
@@ -99,7 +102,9 @@ export default function Home({data}) {
             </Fade>
           </Col>
         </Row>
+        </Fade>
         
+        <Fade bottom>
         <Row className="min-h-100 p-0 m-0 relative">
           <Img 
           className="img-full h-100" 
@@ -119,7 +124,9 @@ export default function Home({data}) {
             </Fade>
           </Col>
         </Row>
-        
+        </Fade>
+
+        <Fade bottom>
         <Row className="min-h-100 p-0 m-0">
           <Img 
           className="img-full h-100" 
@@ -136,7 +143,9 @@ export default function Home({data}) {
             </Fade>
           </Col>
         </Row>
+        </Fade>
         
+        <Fade bottom>
         <Row className="min-h-100 p-0 m-0 relative">
           <Img 
           className="img-full h-100" 
@@ -156,7 +165,9 @@ export default function Home({data}) {
               </Fade>
           </Col>
         </Row>
+        </Fade>
 
+        <Fade bottom>
         <Row className="min-h-100 p-0 m-0">
           <Col lg={12}
           className="flex-left p-5">
@@ -167,7 +178,9 @@ export default function Home({data}) {
             </Fade>
           </Col>
         </Row>
+        </Fade>
 
+        <Fade bottom>
         <Row className="min-h-100 p-0 m-0">
           <Img 
           className="img-full h-100" 
@@ -187,6 +200,7 @@ export default function Home({data}) {
             </Fade>
           </Col>
         </Row>
+        </Fade>
 
       </Layout>
     </>
