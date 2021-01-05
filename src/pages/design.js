@@ -3,6 +3,7 @@ import { graphql } from "gatsby";
 import Layout from '../components/Layout';
 import { Row, Col, Card, CardColumns, Button } from 'react-bootstrap';
 import Img from 'gatsby-image';
+import Fade from 'react-reveal/Fade';
 
 export default function Design({data}) {
    
@@ -76,17 +77,9 @@ export default function Design({data}) {
     // check for existence of context object before trying to access
     // const context = image.context ? image.context : {};
 
-
-      // try to add a zoom feature to cards
-      // const cards = document.querySelectorAll(".card")
-      // for (const card of cards) {
-      //   card.addEventListener('click', function() {
-      //     card.classList.toggle('zoom');
-      //   })
-      // }
-
     return (
         <Layout>
+          <Fade bottom>
         <Row className="min-h-100 p-0 m-0">
           <Img 
           className="img-full" 
@@ -96,9 +89,12 @@ export default function Design({data}) {
           fluid={data.imageOne.childImageSharp.fluid} alt="" />
           <Col sm={12} lg={7}
           className="flex-left-bottom p-5">
-            <h1 className="site-title text-lowercase mb-0">design</h1>
+            <Fade bottom>
+              <h1 className="site-title text-lowercase mb-0">design</h1>
+            </Fade>
           </Col>
-        </Row>   
+        </Row>  
+        </Fade> 
 
         <Row className="min-50 p-0 m-0 bg-black">
           <Col lg={12}

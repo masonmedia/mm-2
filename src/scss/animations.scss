@@ -50,3 +50,12 @@
     // 60% { color: #70bac9; }
     // 80% { color: #75e2df; }
     // 100% { color: #d080d7; }
+
+    .fade-down {
+      animation: fadeDown 1s ease-in-out;
+    }
+
+    @keyframes fadeDown {
+      0% {opacity: 0; transform: translateY(-50px);}
+      100% {opacity: 1; transform: translateY(0);}
+    }

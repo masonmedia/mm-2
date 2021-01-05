@@ -26,7 +26,7 @@ code {
 }
 
 .site-title {
-  font-size: 25vmin;
+  font-size: 35vmin;
   line-height: 83%;
   letter-spacing: -12px;
 }
@@ -211,20 +211,24 @@ code {
 
 @media (max-width: 992px) {
   .site-title {
-    font-size: 15vmin;
+    font-size: 25vmin;
     letter-spacing: -7px;
   }
 }
 
 @media (max-width: 768px) {
   .section-text-bg {
-    font-size: 10vmin;
+    font-size: 12vmin;
+    letter-spacing: -4px;
   }
 }
 
 @media (max-width: 601px) {
   .section-title {
-    letter-spacing: -3px;
+    letter-spacing: -2px;
+  }
+  .bg-knockout {
+    background-size: 300%;
   }
   p {
     font-size: 18px;

@@ -3,6 +3,7 @@ import { useStaticQuery, graphql } from "gatsby";
 import Layout from '../components/Layout';
 import { Row, Col, Button } from 'react-bootstrap';
 import Img from 'gatsby-image';
+import Fade from 'react-reveal/Fade';
 
 export default function Projects() {
   const data = useStaticQuery(
@@ -62,6 +63,7 @@ console.log(repos)
 
   return (
     <Layout>
+      <Fade bottom>
         <Row className="min-h-100 p-0 m-0 relative">
           <Img 
           className="img-full h-100" 
@@ -71,17 +73,22 @@ console.log(repos)
           fluid={data.imageOne.childImageSharp.fluid} alt="" />
           <Col lg={12}
           className="flex-center pb-5">
+            <Fade bottom>
             <h1 className="site-title text-lowercase mb-0">projects</h1>
+            </Fade>
           </Col>
         </Row>
+        </Fade>
 
         <Row className="min-50 p-0 m-0 bg-black">
+        <Fade bottom>
           <Col lg={12}
           className="flex-left p-5 knockout">
             <h5 className="font-weight-bold pb-5">intro</h5>
             <h1 className="section-title my-auto py-3">The gallery below showcases a variety of my website projects. All sites were built from scratch using a variety of coding languages and required frontend development, UI/UX design, graphic design, image sourcing, and copywriting or editing.</h1>
             <h5 className="font-weight-bold pt-5">01</h5>
           </Col>
+          </Fade>
         </Row>
         
 
@@ -89,9 +96,12 @@ console.log(repos)
           repos.map((repo, i) =>
             <Row id="projects" className="d-flex px-3 py-2 m-0" key={i}>
               <Col lg={6} className="flex-center py-3">
-                <img className="w-100" src={repo.openGraphImageUrl} />
+              <Fade bottom>
+                  <img className="w-100" src={repo.openGraphImageUrl} />
+                </Fade>
               </Col>
-            <Col lg={6} className="flex-left p-5">              
+            <Col lg={6} className="flex-left p-5">  
+            <Fade bottom>            
               <img className="border rounded-circle shadow img-thumbnail mb-3" style={{width: '90px'}} src={avatar.avatarUrl} />
              {/* nested loop to access the languages nodes array */}
                 <div className="d-flex flex-row">
@@ -117,13 +127,9 @@ console.log(repos)
                   <Button variant="outline-dark">
                     Code
                   </Button>
-                </a>
-                {/* modal trigger */}
-                {/* <Button variant="primary" onClick={() => setModalShow(true)}>
-                  Read more
-                </Button> */}
-                       
+                </a>   
               </div>
+              </Fade>
             </Col>
           </Row>
         

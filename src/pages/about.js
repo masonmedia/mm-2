@@ -3,6 +3,7 @@ import { Link, useStaticQuery } from 'gatsby';
 import Layout from '../components/Layout';
 import { Row, Col, Button } from 'react-bootstrap';
 import Img from 'gatsby-image';
+import Fade from 'react-reveal/Fade';
 
 export default function About() {
     const data = useStaticQuery(
@@ -28,6 +29,7 @@ export default function About() {
 
         return (
             <Layout>
+              <Fade bottom>
                 <Row className="min-h-100 p-0 m-0">
                   <Img 
                   className="img-full" 
@@ -37,9 +39,12 @@ export default function About() {
                   fluid={data.imageOne.childImageSharp.fluid} alt="" />
                   <Col lg={12}
                   className="flex-left-bottom text-light p-5">
+                    <Fade bottom>
                       <h1 className="site-title text-lowercase mb-0 drop-shadow text-shadow">about</h1>
+                    </Fade>
                   </Col>
                 </Row>
+                </Fade>
 
                 <Row className="min-h-100 p-0 m-0 bg-black">
                     <Col lg={10}

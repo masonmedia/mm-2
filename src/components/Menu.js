@@ -1,10 +1,11 @@
 import React from 'react';
 import { Link } from "gatsby";
-import { Navbar, Nav, NavDropdown, Button } from 'react-bootstrap';
+import { Navbar, Nav, Button } from 'react-bootstrap';
+import Fade from 'react-reveal/Fade';
 
 const Menu = () => {
     return (
-        <Navbar fixed="top" collapseOnSelect expand="lg" bg="black" variant="dark" className="shadow">
+        <Navbar fixed="top" collapseOnSelect expand="xl" bg="dark-teal" variant="dark" className="fade-down shadow py-2">
             <Link 
             className="navbar-brand" 
             to="/"

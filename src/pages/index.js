@@ -10,51 +10,43 @@ export default function Home({data}) {
   return (
     <>
       <Layout>
+        <Fade bottom>
         <Row className="min-h-100 p-0 m-0 relative bg-knockout">
-          <Img 
+          {/* <Img 
           className="img-full h-100" 
           durationFadeIn={1500}
           placeholderStyle={{ backgroundColor: `black` }}
           style={{position: 'absolute', right: '0', top: '0', zIndex: '0'}}
-          fluid={data.imageOne.childImageSharp.fluid} alt="" />
+          fluid={data.imageOne.childImageSharp.fluid} alt="" /> */}
           {/* <img src="https://images.pexels.com/photos/963436/pexels-photo-963436.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" className="img-full h-100 absolute left top z-0" style={{filter: 'brightness(.40)'}} /> */}
           {/* <img src="https://images.pexels.com/photos/3864610/pexels-photo-3864610.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" className="img-full h-100 absolute left top z-0" style={{filter: 'brightness(.40)'}} /> */}
           {/* <img src="https://images.pexels.com/photos/66997/pexels-photo-66997.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" className="img-full h-100 absolute left top z-0" style={{filter: 'brightness(.30)'}} /> */}
           <Col sm={12} lg={12}
-          className="flex-center-bottom p-5 mb-5">
+          className="flex-center p-5">
             <Fade top>
-              <h1 className="site-title sunset-text text-lowercase text-shadow px-3 pt-3">masonmedia</h1>
-              <p className="h3 text-light mb-5" style={{lineHeight: '80%'}}>design. development. copywriting.</p>
+              <h1 className="site-title knockout text-lowercase text-shadow">mason</h1>
+            </Fade>
+            <Fade bottom>
+              <p className="h3 text-light text-shadow" style={{lineHeight: '80%'}}>design. development. copywriting.</p>
             </Fade>
           </Col>
         </Row>
+        </Fade>
         
-        {/* <Row className="min-h-100 p-0 m-0">
-          <Col lg={12}
-          className="flex-left p-5">
-            <Fade bottom>
-            <h5 className="font-weight-bold pb-5">intro</h5>
-            <h1 className="section-text-bg my-auto py-3">
-             <span><Slide down cascade>Hi, I'm Andrew.</Slide></span> <span className="d-table">I'm a passionate</span> <span className="text-dark-teal"><Fade left cascade>frontend developer,</Fade></span> 
-             <span className="text-teal"><Fade top cascade>visual designer,</Fade></span> <span className="text-tan"><Fade bottom cascade>copywriter</Fade></span> <span className="text-orange"><Fade top>and musician.</Fade></span>
-             </h1>
-            <h5 className="font-weight-bold pt-5">01</h5>
-            </Fade>
-          </Col>
-        </Row> */}
-        
-        <Row className="min-h-100 p-0 m-0 relative">
-          <Col lg={12}
-          className="flex-left p-5">
-            <Fade bottom>
-              <div className="absolute z-0 left top h-100 w-100 bg-texture"></div>
-            <h5 className="font-weight-bold pb-5">intro</h5>
-            <h1 className="section-text-bg my-auto py-3">Hi, I'm Andrew. <span className="d-table">I'm a passionate frontend developer, visual designer,copywriter and musician.</span>
-             </h1>
-            <h5 className="font-weight-bold pt-5">01</h5>
-            </Fade>
-          </Col>
-        </Row>
+        <Fade bottom>
+          <Row className="min-h-100 p-0 m-0 relative">
+            <div className="absolute z-0 left top h-100 w-100 bg-texture"></div>
+            <Col sm={12} lg={8}
+            className="flex-left p-5 relative">
+              <Fade bottom>
+              <h5 className="font-weight-bold pb-5">intro</h5>
+              <h1 className="section-text-bg my-auto py-3">Hi, I'm Andrew. <br />I'm a passionate <span className="text-teal">frontend developer,</span> <span className="text-tan">visual designer,</span> <span className="text-orange">copywriter</span> and <span className="text-lightorange">musician.</span>
+              </h1>
+              <h5 className="font-weight-bold pt-5">01</h5>
+              </Fade>
+            </Col>
+          </Row>
+        </Fade>
 
         <Fade>
         <Row className="min-h-100 p-0 m-0 relative">
@@ -90,6 +82,7 @@ export default function Home({data}) {
           placeholderStyle={{ backgroundColor: `black` }}
           style={{position: 'absolute', right: '0', top: '0', zIndex: '0'}}
           fluid={data.imageTwo.childImageSharp.fluid} alt="" />
+          <Fade bottom>
           <Col sm={11} md={11} lg={7} 
           className="flex-left p-5 m-4 bg-black text-pink rounded-lg shadow-lg drop-shadow">
             <Fade bottom>
@@ -101,6 +94,7 @@ export default function Home({data}) {
             <h5 className="font-weight-bold pt-5">03</h5>
             </Fade>
           </Col>
+          </Fade>
         </Row>
         </Fade>
         
@@ -146,25 +140,27 @@ export default function Home({data}) {
         </Fade>
         
         <Fade bottom>
-        <Row className="min-h-100 p-0 m-0 relative">
-          <Img 
-          className="img-full h-100" 
-          durationFadeIn={1500}
-          placeholderStyle={{ backgroundColor: `black` }}
-          style={{position: 'absolute', right: '0', zIndex: '0'}}
-          fluid={data.imageProjects.childImageSharp.fluid} alt="" />
-          <Col sm={11} md={11} lg={7} 
-          className="flex-left p-5 m-4 bg-light rounded-lg shadow-lg drop-shadow text-shadow">
+          <Row className="min-h-100 p-0 m-0 relative">
+            <Img 
+            className="img-full h-100" 
+            durationFadeIn={1500}
+            placeholderStyle={{ backgroundColor: `black` }}
+            style={{position: 'absolute', right: '0', zIndex: '0'}}
+            fluid={data.imageProjects.childImageSharp.fluid} alt="" />
             <Fade bottom>
-              <h5 className="font-weight-bold pb-5">projects</h5>
-              <h1 className="font-weight-bold">I've built websites, designed graphics & written content for a wide range of companies, small businesses, and individuals in spaces from blockchain to healthcare and the arts.</h1>
-              <Link to="/projects">
-                <Button variant="outline-dark" className="mt-2">Learn more</Button>
-              </Link>
-              <h5 className="font-weight-bold pt-5">06</h5>
-              </Fade>
-          </Col>
-        </Row>
+            <Col sm={11} md={11} lg={7} 
+            className="flex-left p-5 m-4 bg-light rounded-lg shadow-lg drop-shadow text-shadow">
+              <Fade bottom>
+                <h5 className="font-weight-bold pb-5">projects</h5>
+                <h1 className="font-weight-bold">I've built websites, designed graphics & written content for a wide range of companies, small businesses, and individuals in spaces from blockchain to healthcare and the arts.</h1>
+                <Link to="/projects">
+                  <Button variant="outline-dark" className="mt-2">Learn more</Button>
+                </Link>
+                <h5 className="font-weight-bold pt-5">06</h5>
+                </Fade>
+            </Col>
+            </Fade>
+          </Row>
         </Fade>
 
         <Fade bottom>

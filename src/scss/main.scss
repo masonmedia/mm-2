@@ -16,3 +16,11 @@ main {
     width: 100%;
     max-width: 100%;
 }
+
+footer a {
+    color: inherit;
+    transition: all .2s ease-in-out;
+}
+footer a:hover {
+    @extend .text-orange;
+}
