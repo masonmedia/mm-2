@@ -1,0 +1,52 @@
+.card {
+    transition: all .5s ease-in-out;
+}
+.zoom {
+    // position: absolute;
+    // left: 0;
+    // top: 0;
+    z-index: 10000;
+    transform: scale(1.5);
+    top: 50%; 
+    right: 50%;
+    // transform: translate(50%,-50%);
+}
+
+.color-change {
+    animation: color-change 8s infinite;
+  }
+  
+//   @keyframes color-change {
+//     0% { color: #27fdf5; }
+//     20% { color: #a8f6f8; }
+//     40% { color: #d7fffe; }
+//     60% { color: #f98dc9; }
+//     80% { color: #f765b8; }
+//     100% { color: #27fdf5; }
+//   }
+  @keyframes color-change {
+    0% { color: #d080d7; }
+    20% { color: #e87fcd; }
+    40% { color: #f9d3ff; }
+    60% { color: #70bac9; }
+    80% { color: #75e2df; }
+    100% { color: #d080d7; }
+  }
+
+//   miami 1 light color palette
+//   https://www.color-hex.com/color-palette/86070
+
+//   #c6f0eb	
+//   #f0f0bb	
+//   #fed2db	
+//   #ead2ef	
+//   #fce1c8	
+
+
+
+    // 0% { color: #d080d7; }
+    // 20% { color: #e87fcd; }
+    // 40% { color: #f9d3ff; }
+    // 60% { color: #70bac9; }
+    // 80% { color: #75e2df; }
+    // 100% { color: #d080d7; }

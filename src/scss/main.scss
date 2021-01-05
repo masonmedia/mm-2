@@ -1,0 +1,17 @@
+@import "~bootstrap/scss/bootstrap";
+@import "./flex.scss";
+@import "./menu.scss";
+@import "./text.scss";
+@import "./utilities.scss";
+@import "./buttons.scss";
+@import "./images.scss";
+@import "./animations.scss";
+@import "./colors.scss";
+@import "./projects.scss";
+@import "./design.scss";
+
+body {
+    overflow-x: hidden;
+    width: 100%;
+    max-width: 100%;
+}

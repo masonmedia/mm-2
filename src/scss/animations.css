@@ -1,0 +1,35 @@
+.card {
+  transition: all .5s ease-in-out;
+}
+
+.zoom {
+  z-index: 10000;
+  transform: scale(1.5);
+  top: 50%;
+  right: 50%;
+}
+
+.color-change {
+  animation: color-change 8s infinite;
+}
+
+@keyframes color-change {
+  0% {
+    color: #d080d7;
+  }
+  20% {
+    color: #e87fcd;
+  }
+  40% {
+    color: #f9d3ff;
+  }
+  60% {
+    color: #70bac9;
+  }
+  80% {
+    color: #75e2df;
+  }
+  100% {
+    color: #d080d7;
+  }
+}

@@ -1,0 +1,74 @@
+.navbar-nav {
+    @extend .d-flex;
+    justify-content: center; 
+    align-items: center;
+}
+.nav-link {
+    width: 100%;
+}
+.navbar-dark .navbar-nav .nav-link {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+// hamburger X
+
+.icon-bar {
+    width: 22px; 
+    height: 2px;
+    background-color: #000;
+    background-color: #fff;
+    display: block;
+    transition: all 0.3s;
+    margin-top: 4px
+}
+ 
+.navbar-toggler {
+  border: none;
+  background: transparent !important;
+}
+
+// animation
+.navbar-toggler .top-bar {
+  transform: rotate(45deg);
+  transform-origin: 10% 10%;
+}
+ 
+.navbar-toggler .middle-bar {
+  opacity: 0;
+}
+ 
+.navbar-toggler .bottom-bar {
+  transform: rotate(-45deg);
+  transform-origin: 10% 90%;
+}
+ 
+.navbar-toggler.collapsed .top-bar {
+  transform: rotate(0);
+}
+ 
+.navbar-toggler.collapsed .middle-bar {
+  opacity: 1;
+}
+ 
+.navbar-toggler.collapsed .bottom-bar {
+  transform: rotate(0);
+}
+
+// remove toggler outline on click
+
+button:focus {
+    outline: 0;
+}
+
+@media (max-width: 992px) {
+    .navbar-nav {
+        justify-content: center; 
+        align-items: start;
+    }
+
+    .nav-link {
+        display: block;
+        padding: 1rem;
+        border-bottom: 1px solid lightgray;
+    }
+}
