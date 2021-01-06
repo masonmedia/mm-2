@@ -10,7 +10,7 @@ const Layout = (props) => {
             <Menu />
             <main>
                 <Container fluid 
-                className={`${props.containerClass} p-0`}
+                className={`${props.containerClass} p-0 m-0`}
                 style={props.containerStyle}>
                     {props.children}
                 </Container>

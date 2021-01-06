@@ -83,15 +83,17 @@ export default function Home({data}) {
           style={{position: 'absolute', right: '0', top: '0', zIndex: '0'}}
           fluid={data.imageTwo.childImageSharp.fluid} alt="" />
           <Fade bottom>
-          <Col sm={11} md={11} lg={7} 
-          className="flex-left p-5 m-4 bg-black text-pink rounded-lg shadow-lg drop-shadow">
+          <Col sm={12} md={11} lg={8} 
+          className="flex-left p-4">
             <Fade bottom>
-            <h5 className="font-weight-bold pb-5">development</h5>
-            <h1 className="font-weight-bold">I design & build websites from scratch with HTML, CSS, SASS, PHP, Javascript, Bootstrap, Tailwind CSS and Wordpress, and I create single page applications and static sites with React, Gatsby, and Next.js.</h1>
-            <Link to="/projects">
-              <Button variant="outline-light" className="mt-3">Learn more</Button>
-            </Link>
-            <h5 className="font-weight-bold pt-5">03</h5>
+              <div className="p-5 bg-black text-pink rounded-lg shadow-lg drop-shadow">
+                <h5 className="font-weight-bold pb-5">development</h5>
+                <h1 className="font-weight-bold">I design & build websites from scratch with HTML, CSS, SASS, PHP, Javascript, Bootstrap, Tailwind CSS and Wordpress, and I create single page applications and static sites with React, Gatsby, and Next.js.</h1>
+                <Link to="/projects">
+                  <Button variant="outline-light" className="mt-3">Learn more</Button>
+                </Link>
+                <h5 className="font-weight-bold pt-5">03</h5>
+              </div>
             </Fade>
           </Col>
           </Fade>
@@ -147,19 +149,19 @@ export default function Home({data}) {
             placeholderStyle={{ backgroundColor: `black` }}
             style={{position: 'absolute', right: '0', zIndex: '0'}}
             fluid={data.imageProjects.childImageSharp.fluid} alt="" />
-            <Fade bottom>
-            <Col sm={11} md={11} lg={7} 
-            className="flex-left p-5 m-4 bg-light rounded-lg shadow-lg drop-shadow text-shadow">
+            <Col sm={12} md={11} lg={8} 
+            className="flex-left p-4">
               <Fade bottom>
+                <div className="p-5 bg-light rounded-lg shadow-lg drop-shadow">
                 <h5 className="font-weight-bold pb-5">projects</h5>
                 <h1 className="font-weight-bold">I've built websites, designed graphics & written content for a wide range of companies, small businesses, and individuals in spaces from blockchain to healthcare and the arts.</h1>
                 <Link to="/projects">
                   <Button variant="outline-dark" className="mt-2">Learn more</Button>
                 </Link>
                 <h5 className="font-weight-bold pt-5">06</h5>
-                </Fade>
+                </div>
+              </Fade>
             </Col>
-            </Fade>
           </Row>
         </Fade>
 

@@ -5,7 +5,7 @@ import Fade from 'react-reveal/Fade';
 
 const Menu = () => {
     return (
-        <Navbar fixed="top" collapseOnSelect expand="xl" bg="dark-teal" variant="dark" className="fade-down shadow py-2">
+        <Navbar fixed="top" collapseOnSelect expand="xl" bg="dark-teal" variant="dark" className="fade-down shadow py-3">
             <Link 
             className="navbar-brand" 
             to="/"
