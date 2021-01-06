@@ -10,9 +10,6 @@ export default function Design({data}) {
       const clImages = data.allCloudinaryMedia.nodes;
       const desc = data.allCloudinaryMedia.nodes.context;
 
-    //   console.log(desc)
-
-
     const test2 = {
         "level1": {
             "name": "dave"
@@ -88,9 +85,9 @@ export default function Design({data}) {
           style={{position: 'absolute', right: '0', zIndex: '0'}}
           fluid={data.imageOne.childImageSharp.fluid} alt="" />
           <Col sm={12} lg={7}
-          className="flex-left-bottom p-5">
+          className="flex-left p-5">
             <Fade bottom>
-              <h1 className="site-title text-lowercase mb-0">design</h1>
+              <h1 className="site-title text-lowercase mb-0">des<span className="text-teal text-shadow">ign</span></h1>
             </Fade>
           </Col>
         </Row>  
@@ -98,7 +95,7 @@ export default function Design({data}) {
 
         <Row className="min-50 p-0 m-0 bg-black">
           <Col lg={12}
-          className="flex-left p-5 knockout">
+          className="flex-left p-5 text-tan">
             <h5 className="font-weight-bold pb-5">intro</h5>
             <h1 className="section-title my-auto py-3">The gallery below showcases a variety of graphic design projects. Formats include concert posters, website assets, business cards, wedding invitations, and packaging & device mockups.</h1>
             <h5 className="font-weight-bold pt-5">01</h5>

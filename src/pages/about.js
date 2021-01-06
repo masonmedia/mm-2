@@ -9,7 +9,7 @@ export default function About() {
     const data = useStaticQuery(
         graphql`
           query aboutQuery {
-            imageOne: file(relativePath: { eq: "mm_laptops2.png" }) {
+            imageOne: file(relativePath: { eq: "23.png" }) {
               childImageSharp {
                 fluid(maxWidth: 2000, quality: 100) {
                   ...GatsbyImageSharpFluid
@@ -38,66 +38,74 @@ export default function About() {
                   style={{position: 'absolute', right: '0', zIndex: '0'}}
                   fluid={data.imageOne.childImageSharp.fluid} alt="" />
                   <Col lg={12}
-                  className="flex-left-bottom text-light p-5">
+                  className="flex-left p-5">
                     <Fade bottom>
-                      <h1 className="site-title text-lowercase mb-0 drop-shadow text-shadow">about</h1>
+                      <h1 className="site-title text-lowercase mb-0">ab<span className="text-teal text-shadow">out</span></h1>
                     </Fade>
                   </Col>
                 </Row>
                 </Fade>
 
-                <Row className="min-h-100 p-0 m-0 bg-black">
+                <Fade bottom>
+                <Row className="min-h-100 p-0 m-0 bg-dark-teal text-tan">
                     <Col lg={10}
                     className="flex-left p-5">
-                        <h5 className="font-weight-bold knockout">intro</h5>
-                        <h1 className="section-title font-weight-bold my-auto py-3 knockout">I'm a passionate, multidisciplinary designer, developer, and writer. I build websites, design custom imagery, and I write copy for a wide variety of contexts. I create modern and engaging digital experiences that help people and companies grow.</h1>
-                        <h5 className="font-weight-bold knockout">01</h5>
+                      <Fade bottom>
+                        <h5 className="font-weight-bold pb-5">intro</h5>
+                        <h1 className="section-title font-weight-bold my-auto py-3">I'm a passionate, multidisciplinary designer, developer, and writer. I build websites, design custom imagery, and I write copy for a wide variety of contexts. I create modern and engaging digital experiences that help people and companies grow.</h1>
+                        <h5 className="font-weight-bold pt-5">01</h5>
+                        </Fade>
                     </Col>
                 </Row>
+                </Fade>
 
-                <Row className="min-h-100 p-0 m-0">
-                  {/* <div className="absolute z-1 h-100 w-100 left" style={{background: 'rgba(0,0,0,0.4)'}}></div>
-                  <Img 
-                    className="img-full h-100" 
-                    durationFadeIn={1500}
-                    placeholderStyle={{ backgroundColor: `black` }}
-                    style={{position: 'absolute', right: '0', zIndex: '0'}}
-                    fluid={data.imageTwo.childImageSharp.fluid} alt="" /> */}
+                <Fade bottom>
+                <Row className="min-h-100 p-0 m-0 text-teal">
                     <Col lg={10}
-                    className="flex-left p-5 relative knockout">
-                      <h5 className="font-weight-bold mb-auto">coding + development</h5>
+                    className="flex-left p-5 relative">
+                      <Fade bottom>
+                      <h5 className="font-weight-bold pb-5">coding + development</h5>
                       <h1 className="section-title font-weight-bold py-3">I build websites from scratch with HTML5, CSS3, SASS, PHP, Javascript, Bootstrap, Tailwind CSS, and Wordpress. I also build single page applications and static websites with React, Next.js, and Gatsby.</h1>
                       <Link to="/projects">
                         <Button variant="outline-dark" className="mt-2 mb-4">See more</Button>
                       </Link>
-                      <h5 className="font-weight-bold mt-auto">02</h5>
+                      <h5 className="font-weight-bold pt-5">02</h5>
+                      </Fade>
                     </Col>
                 </Row>
+                </Fade>
                 
-                <Row className="min-h-100 p-0 m-0 bg-black">
+                <Fade bottom>
+                <Row className="min-h-100 p-0 m-0 bg-black text-orange">
                     <Col lg={10}
                     className="flex-left p-5">
-                        <h5 className="font-weight-bold mb-auto knockout">web + graphic design</h5>
-                        <h1 className="section-title font-weight-bold py-3 knockout">I design UIs, imagery and custom assets for websites, social media and print using Photoshop, Canva, Crello, Lunapic and other tools. I make logos, posters, invitations, and source the perfect project-specific photos.</h1>
+                      <Fade bottom>
+                        <h5 className="font-weight-bold pb-5">web + graphic design</h5>
+                        <h1 className="section-title font-weight-bold py-3">I design UIs, imagery and custom assets for websites, social media and print using Photoshop, Canva, Crello, Lunapic and other tools. I make logos, posters, invitations, and source the perfect project-specific photos.</h1>
                         <Link to="/design">
                           <Button variant="outline-light" className="mt-2 mb-4">Learn more</Button>
                         </Link>
-                        <h5 className="font-weight-bold mt-auto knockout">03</h5>
+                        <h5 className="font-weight-bold pt-5">03</h5>
+                        </Fade>
                     </Col>
                 </Row>
+                </Fade>
                 
-                <Row className="min-h-100 p-0 m-0">
+                <Fade bottom>
+                <Row className="min-h-100 p-0 m-0 text-dark-teal">
                     <Col lg={10}
-                    className="flex-left p-5 knockout">
-                        <h5 className="font-weight-bold mb-auto">copywriting + editing</h5>
+                    className="flex-left p-5">
+                      <Fade bottom>
+                        <h5 className="font-weight-bold pb-5">copywriting + editing</h5>
                         <h1 className="section-title font-weight-bold py-3">I write and edit copy for a wide variety of contexts. I strive for fast moving, easy-to-read content with humour and originality, while specializing in UX, SEO, and editing for web presentation.</h1>
                         <a href="https://copy.andrewmasonmedia.com" target="_blank" rel="noreferrer">
                           <Button variant="outline-dark" className="mt-2 mb-4">Learn more</Button>
                         </a>
-                        <h5 className="font-weight-bold mt-auto">04</h5>
+                        <h5 className="font-weight-bold pt-5">04</h5>
+                        </Fade>
                     </Col>
                 </Row>
-
+                </Fade>
             </Layout>
         )
     }

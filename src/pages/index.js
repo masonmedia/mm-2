@@ -4,7 +4,7 @@ import Layout from "../components/Layout";
 import { Row, Col, Button } from "react-bootstrap";
 import Img from "gatsby-image";
 import { Link } from "gatsby"
-import {Fade, Zoom} from 'react-reveal'; 
+import Fade from 'react-reveal'; 
 
 export default function Home({data}) {
   return (
@@ -61,12 +61,12 @@ export default function Home({data}) {
           <Col sm={12} lg={8} 
           className="flex-left text-lightorange text-shadow p-5">
             <Fade bottom>
-            <h5 className="font-weight-bold pb-5">about me</h5>
+            <h5 className="font-weight-bold pb-5 mb-auto">about me</h5>
             <h1 className="section-title font-weight-bold">I specialize in <span className="text-light">visual design,</span> building <span className="text-light">websites,</span> and <span className="text-light">ux copywriting</span>. I help build successful brands and create engaging digital experiences.</h1>
             <Link to="/about">
               <Button variant="light" className="mt-3">Read more</Button>
             </Link>
-            <h5 className="font-weight-bold pt-5">02</h5>
+            <h5 className="font-weight-bold pt-5 mt-auto">02</h5>
             </Fade>
           </Col>
         </Row>
@@ -123,19 +123,19 @@ export default function Home({data}) {
         </Fade>
 
         <Fade bottom>
-        <Row className="min-h-100 p-0 m-0">
+        <Row className="min-h-100 p-0 m-0 relative">
           <Img 
           className="img-full h-100" 
           durationFadeIn={1500}
           placeholderStyle={{ backgroundColor: `black` }}
-          style={{position: 'absolute', right: '0', zIndex: '0'}}
+          style={{position: 'absolute', top: '0', right: '0', zIndex: '0'}}
           fluid={data.imageSix.childImageSharp.fluid} alt="" />
           <Col sm={12} md={7} lg={7} 
           className="flex-left p-5">
             <Fade bottom>
-            <h5 className="font-weight-bold">writing</h5>
+            <h5 className="font-weight-bold pb-5">writing</h5>
             <h1 className="font-weight-bold my-auto">I also write short and long form content on a wide variety of topics for websites, articles, reviews, blog posts, email marketing, and social media. I specialize in UX, SEO, and editing for web presentation.</h1>
-            <h5 className="font-weight-bold">05</h5>
+            <h5 className="font-weight-bold pt-5">05</h5>
             </Fade>
           </Col>
         </Row>
@@ -218,7 +218,7 @@ export const fluidImage = graphql`
 
 export const pageQuery = graphql`
   query {
-    imageOne: file(relativePath: { eq: "mm_sunset_5.jpg" }) {
+    imageOne: file(relativePath: { eq: "mm_iphone_banner.png" }) {
       childImageSharp {
         fluid(maxWidth: 2000, quality: 100) {
           ...GatsbyImageSharpFluid

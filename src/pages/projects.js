@@ -74,7 +74,7 @@ console.log(repos)
           <Col lg={12}
           className="flex-center pb-5">
             <Fade bottom>
-            <h1 className="site-title text-lowercase mb-0">projects</h1>
+            <h1 className="site-title text-lowercase mb-0">pro<span className="text-teal text-shadow">jects</span></h1>
             </Fade>
           </Col>
         </Row>
