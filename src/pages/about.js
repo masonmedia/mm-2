@@ -26,7 +26,6 @@ export default function About() {
                 <Row className="min-h-100 p-0 m-0 bg-teal">
                   <Img 
                   className="img-full" 
-                  durationFadeIn={1500}
                   style={{position: 'absolute', right: '0', zIndex: '0'}}
                   fluid={data.imageOne.childImageSharp.fluid} alt="" />
                   <Fade left>

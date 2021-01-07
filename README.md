@@ -1,6 +1,6 @@
 # Mason Media Home Site
 
-<img src="images/mm_browser_social.png"
+<img src="static/mm_browser_social.png"
      alt="mason media homepage banner photo"
      style="width: 100%; float: left; margin: 0 auto;" />
 
