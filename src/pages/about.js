@@ -9,7 +9,7 @@ export default function About() {
     const data = useStaticQuery(
         graphql`
           query aboutQuery {
-            imageOne: file(relativePath: { eq: "23.png" }) {
+            imageOne: file(relativePath: { eq: "mm_threed3b.png" }) {
               childImageSharp {
                 fluid(maxWidth: 2000, quality: 100) {
                   ...GatsbyImageSharpFluid
@@ -30,13 +30,16 @@ export default function About() {
         return (
             <Layout>
               <Fade bottom>
-                <Row className="min-h-100 p-0 m-0">
+                <Row className="min-h-100 p-0 m-0 bg-teal">
                   <Img 
                   className="img-full" 
                   durationFadeIn={1500}
                   placeholderStyle={{ backgroundColor: `black` }}
                   style={{position: 'absolute', right: '0', zIndex: '0'}}
                   fluid={data.imageOne.childImageSharp.fluid} alt="" />
+                  <Fade left>
+                  <div className="absolute top left z-0 h-100 w-100 " style={{background: 'rgba(0,0,0,0.2)'}}></div>
+                  </Fade>
                   <Col lg={12}
                   className="flex-left p-5">
                     <Fade bottom>
@@ -52,7 +55,7 @@ export default function About() {
                     className="flex-left p-5">
                       <Fade bottom>
                         <h5 className="font-weight-bold pb-5">intro</h5>
-                        <h1 className="section-title font-weight-bold my-auto py-3">I'm a passionate, multidisciplinary designer, developer, and writer. I build websites, design custom imagery, and I write copy for a wide variety of contexts. I create modern and engaging digital experiences that help people and companies grow.</h1>
+                        <h1 className="section-title font-weight-bold my-auto py-3">I'm a passionate, multidisciplinary designer, developer, and writer. I build websites, design custom imagery, and write copy for a wide variety of contexts. I value ethical design, data privacy, social responsibility, and sustainability.</h1>
                         <h5 className="font-weight-bold pt-5">01</h5>
                         </Fade>
                     </Col>
