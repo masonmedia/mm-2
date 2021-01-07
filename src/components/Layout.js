@@ -2,11 +2,13 @@ import React from 'react';
 import Menu from './Menu';
 import Container from 'react-bootstrap/Container';
 import Footer from './Footer';
+import SEO from './SEO';
 
 
 const Layout = (props) => {
     return (
         <>
+            <SEO />
             <Menu />
             <main>
                 <Container fluid 

@@ -5,6 +5,7 @@ import { Row, Col, Button } from "react-bootstrap";
 import Img from "gatsby-image";
 import { Link } from "gatsby"
 import Fade from 'react-reveal'; 
+import scrollTo from 'gatsby-plugin-smoothscroll';
 
 export default function Home({data}) {
   return (
@@ -28,13 +29,14 @@ export default function Home({data}) {
             </Fade>
             <Fade bottom>
               <p className="h3 text-light text-shadow" style={{lineHeight: '80%'}}>design. development. copywriting.</p>
+              <Button variant="outline-light" className="bg-tan shadow mt-3" onClick={() => scrollTo('#about')}>Learn more</Button>
             </Fade>
           </Col>
         </Row>
         </Fade>
         
         <Fade bottom>
-          <Row className="min-h-100 p-0 m-0 relative">
+          <Row id="about" className="min-h-100 p-0 m-0 relative">
             <div className="absolute z-0 left top h-100 w-100 bg-texture"></div>
             <Col sm={12} lg={8}
             className="flex-left p-5 relative">

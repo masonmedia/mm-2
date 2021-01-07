@@ -11,12 +11,20 @@
 module.exports = {
   /* Your site config here */
   siteMetadata: {
-    title: 'Mason Media'
+    title: 'Mason Media',
+    description: 'Mason Media is the web development studio of Toronto frontend developer, designer, and copywriter Andrew Mason. We make websites, create custom imagery, and write UX content.',
+    robots: 'index,follow',
+    url: 'https://andrewmasonmedia.com',
+    type: 'website',
+    image: 'mm_browser_social.png',
+    imageAlt: 'An image of the Mason Media homepage featuring a sunset landscape photo and the site title.',
   },
   plugins: [
     `gatsby-plugin-sass`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-smoothscroll`,
       {
         resolve: `gatsby-source-filesystem`,
         options: {
