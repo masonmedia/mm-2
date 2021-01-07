@@ -83,7 +83,7 @@ console.log(repos)
         <Row className="min-50 p-0 m-0 bg-black">
         <Fade bottom>
           <Col lg={12}
-          className="flex-left p-5 knockout">
+          className="flex-left p-5 text-tan">
             <h5 className="font-weight-bold pb-5">intro</h5>
             <h1 className="section-title my-auto py-3">The gallery below showcases a variety of my website projects. All sites were built from scratch using a variety of coding languages and required frontend development, UI/UX design, graphic design, image sourcing, and copywriting or editing.</h1>
             <h5 className="font-weight-bold pt-5">01</h5>
