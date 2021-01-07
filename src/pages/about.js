@@ -16,13 +16,6 @@ export default function About() {
                 }
               }
             }
-            imageTwo: file(relativePath: { eq: "mm_ui_mock3.png" }) {
-              childImageSharp {
-                fluid(maxWidth: 2000, quality: 100) {
-                  ...GatsbyImageSharpFluid
-                }
-              }
-            }
           } 
         `
       )
@@ -34,11 +27,10 @@ export default function About() {
                   <Img 
                   className="img-full" 
                   durationFadeIn={1500}
-                  placeholderStyle={{ backgroundColor: `black` }}
                   style={{position: 'absolute', right: '0', zIndex: '0'}}
                   fluid={data.imageOne.childImageSharp.fluid} alt="" />
                   <Fade left>
-                  <div className="absolute top left z-0 h-100 w-100 " style={{background: 'rgba(0,0,0,0.2)'}}></div>
+                    <div className="absolute top left z-0 h-100 w-100" style={{background: 'rgba(0,0,0,0.2)'}}></div>
                   </Fade>
                   <Col lg={12}
                   className="flex-left p-5">
