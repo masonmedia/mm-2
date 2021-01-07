@@ -229,7 +229,7 @@ export const pageQuery = graphql`
       ...fluidImage
     }
     
-    imageThree: file(relativePath: { eq: "mm_iphone_sunset3.png" }) {
+    imageThree: file(relativePath: { eq: "mm_iphone_sunset3b.png" }) {
       ...fluidImage
     }
     imageFour: file(relativePath: { eq: "mm_design_lookhere.png" }) {
