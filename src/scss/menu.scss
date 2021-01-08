@@ -11,6 +11,9 @@
   transition: all .2s ease-in-out;
   @extend .font-900;
 }
+.navbar-brand {
+  letter-spacing: -.5px;
+}
 
 // hamburger X
 

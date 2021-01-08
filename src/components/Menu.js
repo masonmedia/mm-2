@@ -7,7 +7,7 @@ const Menu = () => {
     return (
         <Navbar fixed="top" collapseOnSelect expand="xl" bg="dark-teal" variant="dark" className="fade-down shadow py-3">
             <Link 
-            className="navbar-brand" 
+            className="navbar-brand font-900" 
             to="/"
             activeClassName="active">
                 {/* <span>
@@ -21,7 +21,7 @@ const Menu = () => {
                 <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" className="text-tan bi bi-grid-1x2 mr-2" viewBox="0 0 16 16" style={{transform: 'rotate(90deg)'}}>
                 <path d="M6 1H1v14h5V1zm9 0h-5v5h5V1zm0 9v5h-5v-5h5zM0 1a1 1 0 0 1 1-1h5a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V1zm9 0a1 1 0 0 1 1-1h5a1 1 0 0 1 1 1v5a1 1 0 0 1-1 1h-5a1 1 0 0 1-1-1V1zm1 8a1 1 0 0 0-1 1v5a1 1 0 0 0 1 1h5a1 1 0 0 0 1-1v-5a1 1 0 0 0-1-1h-5z"/>
                 </svg>
-                mason<span className="font-weight-bold">media</span>
+                mason<span className="text-tan">media</span>
             </Link>
             <Navbar.Toggle className="border-0 outline-0 pt-0" aria-controls="responsive-navbar-nav">
                 <span className="icon-bar top-bar"></span>

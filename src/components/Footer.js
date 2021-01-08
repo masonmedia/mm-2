@@ -30,7 +30,7 @@ export default function Footer() {
                         </Col>
                         <Col xl={3} md={6} className="align-left-top px-5 pt-5 font-weight-bold">
                             <FooterIcon />
-                            <h3 className="mb-0">Work.</h3>
+                            <h3 className="mb-0">Projects.</h3>
                             <div className="h3 m-0">--</div>
                             <ul className="list-unstyled blockquote">
                                 <a href="https://oakwoodguitarschool.com/" target="_blank" rel="noreferrer">
