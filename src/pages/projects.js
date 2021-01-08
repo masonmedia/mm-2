@@ -102,7 +102,7 @@ console.log(repos)
               </Col>
             <Col lg={6} className="flex-left p-5">  
             <Fade bottom>            
-              <img className="border rounded-circle shadow img-thumbnail mb-3" style={{width: '90px'}} src={avatar.avatarUrl} />
+              <img className="border shadow img-thumbnail mb-3" style={{width: '90px', height: '90px', borderRadius: '100%'}} src={avatar.avatarUrl} />
              {/* nested loop to access the languages nodes array */}
                 <div className="d-flex flex-row">
                   {repo.languages.nodes.map((lang, i) => (
@@ -134,9 +134,7 @@ console.log(repos)
           </Row>
         
           )
-        }
-        {/* modal can't go within map loop */}
-            
+        }            
     </Layout>
   )
 }
