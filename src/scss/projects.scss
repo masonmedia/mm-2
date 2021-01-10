@@ -1,3 +1,7 @@
 #projects.row:nth-of-type(odd) {
     background: #d6d6d6a3;
 }
+
+#projects.row:nth-of-type(even) {
+    @extend .bg-light;
+}

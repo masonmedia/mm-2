@@ -77,7 +77,7 @@ export default function Design({data}) {
     return (
         <Layout>
           <Fade bottom>
-        <Row className="min-h-100 p-0 m-0">
+        <Row className="min-h-100 p-0 m-0 relative">
           <Img 
           className="img-full" 
           durationFadeIn={1500}
@@ -93,7 +93,7 @@ export default function Design({data}) {
         </Row>  
         </Fade> 
 
-        <Row className="min-50 p-0 m-0 bg-black">
+        <Row className="min-h-75 p-0 m-0 bg-black">
           <Col lg={12}
           className="flex-left p-5 text-tan">
             <h5 className="font-weight-bold pb-5">intro</h5>

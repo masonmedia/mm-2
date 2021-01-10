@@ -23,7 +23,7 @@ export default function About() {
         return (
             <Layout>
               <Fade bottom>
-                <Row className="min-h-100 p-0 m-0 bg-teal">
+                <Row className="min-h-100 p-0 m-0 bg-teal relative">
                   <Img 
                   className="img-full" 
                   style={{position: 'absolute', right: '0', zIndex: '0'}}

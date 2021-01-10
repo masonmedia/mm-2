@@ -209,6 +209,17 @@ code {
   }
 }
 
+@media (min-width: 1366px) {
+  .site-title {
+    font-size: 30vmin;
+    letter-spacing: -22px;
+  }
+  .section-title {
+    font-size: 8vmin;
+    letter-spacing: -7px;
+  }
+}
+
 @media (max-width: 992px) {
   .site-title {
     font-size: 25vmin;

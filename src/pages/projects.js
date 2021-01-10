@@ -80,7 +80,7 @@ console.log(repos)
         </Row>
         </Fade>
 
-        <Row className="min-50 p-0 m-0 bg-black">
+        <Row className="min-h-75 p-0 m-0 bg-black">
         <Fade bottom>
           <Col lg={12}
           className="flex-left p-5 text-tan">
