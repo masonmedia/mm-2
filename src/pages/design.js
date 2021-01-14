@@ -75,22 +75,18 @@ export default function Design({data}) {
 
     return (
         <Layout>
-          <Fade bottom>
-            <Row className="min-h-100 p-0 m-0 relative">
-              <Img 
-              className="img-full" 
-              durationFadeIn={1500}
-              placeholderStyle={{ backgroundColor: `black` }}
-              style={{position: 'absolute', right: '0', zIndex: '0'}}
-              fluid={data.imageOne.childImageSharp.fluid} alt="" />
-              <Col sm={12} lg={7}
-              className="flex-left p-5">
-                <Fade bottom>
-                  <h1 className="site-title text-lowercase mb-0">des<span className="text-teal text-shadow">ign</span></h1>
-                </Fade>
-              </Col>
-            </Row>  
-          </Fade>
+          <Row className="min-h-100 p-0 m-0 relative fade-up">
+            <Img 
+            className="img-full" 
+            durationFadeIn={1500}
+            placeholderStyle={{ backgroundColor: `black` }}
+            style={{position: 'absolute', right: '0', zIndex: '0'}}
+            fluid={data.imageOne.childImageSharp.fluid} alt="" />
+            <Col sm={12} lg={7}
+            className="flex-left p-5">
+                <h1 className="site-title text-lowercase mb-0 fade-down">des<span className="text-teal text-shadow">ign</span></h1>
+            </Col>
+          </Row>  
 
         <Fade bottom>
           <Row className="min-h-75 p-0 m-0 bg-black">

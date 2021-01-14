@@ -22,8 +22,7 @@ export default function About() {
 
         return (
             <Layout>
-              <Fade bottom>
-                <Row className="min-h-100 p-0 m-0 bg-teal relative">
+                <Row className="min-h-100 p-0 m-0 bg-teal relative fade-up">
                   <Img 
                   className="img-full" 
                   style={{position: 'absolute', right: '0', zIndex: '0'}}
@@ -33,12 +32,9 @@ export default function About() {
                   </Fade>
                   <Col lg={12}
                   className="flex-left p-5">
-                    <Fade bottom>
-                      <h1 className="site-title text-lowercase mb-0">ab<span className="text-teal text-shadow">out</span></h1>
-                    </Fade>
+                      <h1 className="site-title text-lowercase mb-0 fade-down">ab<span className="text-teal text-shadow">out</span></h1>
                   </Col>
                 </Row>
-                </Fade>
 
                 <Fade bottom>
                 <Row className="min-h-100 p-0 m-0 bg-dark-teal text-tan">

@@ -61,8 +61,7 @@ const avatar = data.allGithubData.nodes[0].data.user
 
   return (
     <Layout>
-      <Fade bottom>
-        <Row className="min-h-100 p-0 m-0 relative">
+        <Row className="min-h-100 p-0 m-0 relative fade-up">
           <Img 
           className="img-full h-100" 
           durationFadeIn={1500}
@@ -71,12 +70,9 @@ const avatar = data.allGithubData.nodes[0].data.user
           fluid={data.imageOne.childImageSharp.fluid} alt="" />
           <Col lg={12}
           className="flex-center pb-5">
-            <Fade bottom>
-            <h1 className="site-title text-lowercase mb-0">pro<span className="text-teal text-shadow">jects</span></h1>
-            </Fade>
+            <h1 className="site-title text-lowercase mb-0 fade-down">pro<span className="text-teal text-shadow">jects</span></h1>
           </Col>
         </Row>
-        </Fade>
 
         <Row className="min-h-75 p-0 m-0 bg-black">
         <Fade bottom>

@@ -23,13 +23,9 @@ export default function Home({data}) {
           {/* <img src="https://images.pexels.com/photos/66997/pexels-photo-66997.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" className="img-full h-100 absolute left top z-0" style={{filter: 'brightness(.30)'}} /> */}
           <Col sm={12} lg={12}
           className="flex-center p-5">
-            <Fade top>
-              <h1 className="site-title knockout text-lowercase text-shadow">mason</h1>
-            </Fade>
-            <Fade bottom>
-              <p className="h3 text-light text-shadow" style={{lineHeight: '80%'}}>design. development. copywriting.</p>
-              <Button variant="outline-light" className="bg-tan shadow mt-3" onClick={() => scrollTo('#about')}>Learn more</Button>
-            </Fade>
+              <h1 className="site-title knockout text-lowercase text-shadow fade-down">mason</h1>
+              <p className="h3 text-light text-shadow text-focus-in" style={{lineHeight: '80%'}}>design. development. copywriting.</p>
+              <Button variant="outline-light" className="bg-tan shadow mt-3 fade-up" onClick={() => scrollTo('#about')}>Learn more</Button>
           </Col>
         </Row>
         
