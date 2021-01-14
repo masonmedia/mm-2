@@ -4,6 +4,7 @@ import Layout from "../components/Layout";
 import { Row, Col, Button } from "react-bootstrap";
 import Img from "gatsby-image";
 import { Link } from "gatsby"
+import AniLink from 'gatsby-plugin-transition-link/AniLink';
 import Fade from 'react-reveal'; 
 import scrollTo from 'gatsby-plugin-smoothscroll';
 
@@ -59,9 +60,12 @@ export default function Home({data}) {
             <Fade bottom>
             <h5 className="font-weight-bold pb-5 mb-auto">about me</h5>
             <h1 className="section-title font-weight-bold">I specialize in <span className="text-light">visual design,</span> building <span className="text-light">websites,</span> and <span className="text-light">ux copywriting</span>. I help build successful brands and create engaging digital experiences.</h1>
-            <Link to="/about">
+            <AniLink
+            cover
+            bg="#014A59" 
+            to="/about">
               <Button variant="light" className="mt-3">Read more</Button>
-            </Link>
+            </AniLink>
             <h5 className="font-weight-bold pt-5 mt-auto">02</h5>
             </Fade>
           </Col>
@@ -85,9 +89,12 @@ export default function Home({data}) {
               <div className="flex-left min-h-75 p-5 bg-black text-pink rounded-lg shadow-lg drop-shadow">
                 <h5 className="font-weight-bold pb-5 mb-auto">development</h5>
                 <h1 className="font-weight-bold">I design & build websites from scratch with HTML, CSS, SASS, PHP, Javascript, Bootstrap, Tailwind CSS and Wordpress, and I create single page applications and static sites with React, Gatsby, and Next.js.</h1>
-                <Link to="/projects">
+                <AniLink
+                cover
+                bg="#014A59" 
+                to="/projects">
                   <Button variant="outline-light" className="mt-3">Learn more</Button>
-                </Link>
+                </AniLink>
                 <h5 className="font-weight-bold pt-5 mt-auto">03</h5>
               </div>
             </Fade>
@@ -109,9 +116,12 @@ export default function Home({data}) {
             <Fade bottom>
             <h5 className="font-weight-bold pb-5 mb-auto">design</h5>
             <h1 className="font-weight-bold text-shadow drop-shadow">I create imagery for websites, social media, and print using Photoshop, Canva, Crello, Lunapic and other tools. I make logos, posters, banners, wedding invitations, business cards, and source the perfect project-specific photos.</h1>
-            <Link to="/design">
+            <AniLink
+            cover
+            bg="#014A59" 
+            to="/design">
               <Button variant="light" className="mt-3">Learn more</Button>
-            </Link>
+            </AniLink>
             <h5 className="font-weight-bold pt-5 mt-auto">04</h5>
             </Fade>
           </Col>
@@ -151,9 +161,12 @@ export default function Home({data}) {
                 <div className="flex-left min-h-75 p-5 bg-light rounded-lg shadow-lg drop-shadow">
                 <h5 className="font-weight-bold pb-5 mb-auto">projects</h5>
                 <h1 className="font-weight-bold">I've built websites, designed graphics & written content for a wide range of companies, small businesses, and individuals in spaces from blockchain to healthcare and the arts.</h1>
-                <Link to="/projects">
+                <AniLink
+                cover
+                bg="#014A59"
+                to="/projects">
                   <Button variant="outline-dark" className="mt-2">Learn more</Button>
-                </Link>
+                </AniLink>
                 <h5 className="font-weight-bold pt-5 mt-auto">06</h5>
                 </div>
               </Fade>

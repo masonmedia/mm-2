@@ -103,7 +103,7 @@ export default function Design({data}) {
         <Row className="min-h-100 p-5">
             <CardColumns>
             {clImages.map((image, i) => (
-                <Card key={i} className="rounded-lg border-0 mb-3 relative" style={{filter: 'drop-shadow(10px 20px 10px grey)'}}>
+                <Card key={i} className="rounded-lg border-0 mb-3 relative fade-up" style={{filter: 'drop-shadow(10px 20px 10px grey)'}}>
                     <Card.Img variant="top" src={image.secure_url} />
                     <Card.Body>
                       <h5 className="h6 small text-muted text-uppercase">{image.created_at}</h5>

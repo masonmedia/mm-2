@@ -1,5 +1,6 @@
 import React from 'react'
-import { Link, useStaticQuery } from 'gatsby';
+import { useStaticQuery } from 'gatsby';
+import AniLink from 'gatsby-plugin-transition-link/AniLink';
 import Layout from '../components/Layout';
 import { Row, Col, Button } from 'react-bootstrap';
 import Img from 'gatsby-image';
@@ -54,9 +55,12 @@ export default function About() {
                       <Fade bottom>
                       <h5 className="font-weight-bold pb-5">coding + development</h5>
                       <h1 className="section-title font-weight-bold py-3">I build websites from scratch with HTML5, CSS3, SASS, PHP, Javascript, Bootstrap, Tailwind CSS, and Wordpress. I also build single page applications and static websites with React, Next.js, and Gatsby.</h1>
-                      <Link to="/projects">
+                      <AniLink
+                      cover
+                      bg="#014A59"
+                      to="/projects">
                         <Button variant="outline-dark" className="mt-2 mb-4">See more</Button>
-                      </Link>
+                      </AniLink>
                       <h5 className="font-weight-bold pt-5">02</h5>
                       </Fade>
                     </Col>
@@ -70,9 +74,12 @@ export default function About() {
                       <Fade bottom>
                         <h5 className="font-weight-bold pb-5">web + graphic design</h5>
                         <h1 className="section-title font-weight-bold py-3">I design UIs, imagery and custom assets for websites, social media and print using Photoshop, Canva, Crello, Lunapic and other tools. I make logos, posters, invitations, and source the perfect project-specific photos.</h1>
-                        <Link to="/design">
+                        <AniLink
+                        cover
+                        bg="#014A59" 
+                        to="/design">
                           <Button variant="outline-light" className="mt-2 mb-4">Learn more</Button>
-                        </Link>
+                        </AniLink>
                         <h5 className="font-weight-bold pt-5">03</h5>
                         </Fade>
                     </Col>
