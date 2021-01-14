@@ -6,7 +6,7 @@ const Menu = () => {
     return (
         <Navbar fixed="top" collapseOnSelect expand="xl" bg="dark-teal" variant="dark" className="fade-down shadow py-3">
             <AniLink 
-            cover bg="#000000"
+            cover bg="#014a59"
             className="navbar-brand font-900" 
             to="/">
                 {/* <span>
