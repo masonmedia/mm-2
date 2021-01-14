@@ -7,7 +7,7 @@ import SEO from './SEO';
 
 const Layout = (props) => {
     return (
-        <>
+        <div className="fade-in">
             <SEO />
             <Menu />
             <main>
@@ -18,7 +18,7 @@ const Layout = (props) => {
                 </Container>
             </main>
             <Footer />
-        </>
+        </div>
     )
 }
 

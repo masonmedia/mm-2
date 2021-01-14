@@ -51,6 +51,9 @@
     // 80% { color: #75e2df; }
     // 100% { color: #d080d7; }
 
+    .fade-in {
+      animation: fadeIn 1s ease-in-out;
+    }
     .fade-down {
       animation: fadeDown 1s ease-in-out;
     }
