@@ -1,5 +1,6 @@
 import React from 'react';
-import AniLink from 'gatsby-plugin-transition-link/AniLink';
+// import AniLink from 'gatsby-plugin-transition-link/AniLink';
+import { Link } from 'gatsby';
 import { Container, Row, Col } from 'react-bootstrap';
 import FooterIcon from './FooterIcon';
 
@@ -14,26 +15,26 @@ export default function Footer() {
                             <h3 className="mb-0">Menu.</h3>
                             <div className="h2 m-0 p-0">--</div>
                             <ul className="list-unstyled blockquote">
-                                <AniLink 
+                                <Link 
                                 cover bg="#014a59"
                                 to="/">
                                     <li>Home</li>
-                                </AniLink>
-                                <AniLink 
+                                </Link>
+                                <Link 
                                 cover
                                 to="/about">
                                     <li>About</li>
-                                </AniLink>
-                                <AniLink 
+                                </Link>
+                                <Link 
                                 cover
                                 to="/projects">
                                     <li>Projects</li>
-                                </AniLink>
-                                <AniLink 
+                                </Link>
+                                <Link 
                                 cover
                                 to="/design">
                                     <li>Design</li>
-                                </AniLink>
+                                </Link>
                             </ul>
                         </Col>
                         <Col xl={3} md={6} className="align-left-top px-5 pt-5 font-weight-bold">

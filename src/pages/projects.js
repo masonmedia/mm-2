@@ -61,6 +61,7 @@ const avatar = data.allGithubData.nodes[0].data.user
 
   return (
     <Layout>
+      <Fade bottom>
         <Row className="min-h-100 p-0 m-0 relative">
           <Img 
           className="img-full h-100" 
@@ -75,6 +76,7 @@ const avatar = data.allGithubData.nodes[0].data.user
             </Fade>
           </Col>
         </Row>
+        </Fade>
 
         <Row className="min-h-75 p-0 m-0 bg-black">
         <Fade bottom>
