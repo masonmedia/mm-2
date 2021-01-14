@@ -59,11 +59,8 @@ export default function Projects() {
 const repos = data.allGithubData.nodes[0].data.user.repositories.nodes
 const avatar = data.allGithubData.nodes[0].data.user
 
-console.log(repos)
-
   return (
     <Layout>
-      <Fade bottom>
         <Row className="min-h-100 p-0 m-0 relative">
           <Img 
           className="img-full h-100" 
@@ -78,7 +75,6 @@ console.log(repos)
             </Fade>
           </Col>
         </Row>
-        </Fade>
 
         <Row className="min-h-75 p-0 m-0 bg-black">
         <Fade bottom>

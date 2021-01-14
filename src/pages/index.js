@@ -11,7 +11,6 @@ export default function Home({data}) {
   return (
     <>
       <Layout>
-        <Fade bottom>
         <Row className="min-h-100 p-0 m-0 relative bg-knockout">
           {/* <Img 
           className="img-full h-100" 
@@ -33,7 +32,6 @@ export default function Home({data}) {
             </Fade>
           </Col>
         </Row>
-        </Fade>
         
         <Fade bottom>
           <Row id="about" className="min-h-100 p-0 m-0 relative">

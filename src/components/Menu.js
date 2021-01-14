@@ -1,15 +1,14 @@
 import React from 'react';
-import { Link } from "gatsby";
+import AniLink from "gatsby-plugin-transition-link/AniLink";
 import { Navbar, Nav, Button } from 'react-bootstrap';
-import Fade from 'react-reveal/Fade';
 
 const Menu = () => {
     return (
         <Navbar fixed="top" collapseOnSelect expand="xl" bg="dark-teal" variant="dark" className="fade-down shadow py-3">
-            <Link 
+            <AniLink 
+            cover bg="#000000"
             className="navbar-brand font-900" 
-            to="/"
-            activeClassName="active">
+            to="/">
                 {/* <span>
                     <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-tallymark-3" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
                     <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
@@ -22,7 +21,7 @@ const Menu = () => {
                 <path d="M6 1H1v14h5V1zm9 0h-5v5h5V1zm0 9v5h-5v-5h5zM0 1a1 1 0 0 1 1-1h5a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V1zm9 0a1 1 0 0 1 1-1h5a1 1 0 0 1 1 1v5a1 1 0 0 1-1 1h-5a1 1 0 0 1-1-1V1zm1 8a1 1 0 0 0-1 1v5a1 1 0 0 0 1 1h5a1 1 0 0 0 1-1v-5a1 1 0 0 0-1-1h-5z"/>
                 </svg>
                 mason<span className="text-tan">media</span>
-            </Link>
+            </AniLink>
             <Navbar.Toggle className="border-0 outline-0 pt-0" aria-controls="responsive-navbar-nav">
                 <span className="icon-bar top-bar"></span>
 	            <span className="icon-bar middle-bar"></span>
@@ -34,9 +33,9 @@ const Menu = () => {
             </Navbar.Toggle>
             <Navbar.Collapse id="responsive-navbar-nav">
                 <Nav className="ml-auto d-flex">
-                    <Link className="nav-link" to="/about">about</Link>
-                    <Link className="nav-link" to="/projects">projects</Link>
-                    <Link className="nav-link" to="/design">design</Link>
+                    <AniLink cover className="nav-link" to="/about">about</AniLink>
+                    <AniLink cover className="nav-link" to="/projects">projects</AniLink>
+                    <AniLink cover className="nav-link" to="/design">design</AniLink>
                     <a className="nav-link" href="mailto:andrewmasonmedia@gmail.com">
                         <Button variant="outline-light">Contact</Button>
                     </a>

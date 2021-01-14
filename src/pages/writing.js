@@ -23,7 +23,6 @@ export default function Writing() {
 
         return (
             <Layout>
-              <Fade bottom>
                 <Row className="min-h-100 p-0 m-0">
                   <Img 
                   className="img-full" 
@@ -39,7 +38,6 @@ export default function Writing() {
                     </Fade>
                   </Col>
                 </Row>
-                </Fade>
 
                 <Fade bottom>
                 <Row className="min-h-100 p-0 m-0 bg-dark-teal text-tan">

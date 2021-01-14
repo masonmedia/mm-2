@@ -22,7 +22,6 @@ export default function About() {
 
         return (
             <Layout>
-              <Fade bottom>
                 <Row className="min-h-100 p-0 m-0 bg-teal relative">
                   <Img 
                   className="img-full" 
@@ -38,7 +37,6 @@ export default function About() {
                     </Fade>
                   </Col>
                 </Row>
-                </Fade>
 
                 <Fade bottom>
                 <Row className="min-h-100 p-0 m-0 bg-dark-teal text-tan">

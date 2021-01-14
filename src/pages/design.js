@@ -66,7 +66,6 @@ export default function Design({data}) {
     //   console.log(address.street); 
 
       const { allCloudinaryMedia: {nodes: [{ context: {custom: {alt, caption}} }] }} = data;
-      console.log(alt, caption); 
 
     //   const {allCloudinaryMedia: {nodes: [{context: {...text}}]}} = data; 
     //   console.log(text);
@@ -76,7 +75,6 @@ export default function Design({data}) {
 
     return (
         <Layout>
-          <Fade bottom>
         <Row className="min-h-100 p-0 m-0 relative">
           <Img 
           className="img-full" 
@@ -91,7 +89,6 @@ export default function Design({data}) {
             </Fade>
           </Col>
         </Row>  
-        </Fade> 
 
         <Row className="min-h-75 p-0 m-0 bg-black">
           <Col lg={12}
