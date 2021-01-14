@@ -38,7 +38,7 @@ export default function Home({data}) {
         <Fade bottom>
           <Row id="about" className="min-h-100 p-0 m-0 relative">
             <div className="absolute z-0 left top h-100 w-100 bg-texture"></div>
-            <Col sm={12} lg={8} xl={10}
+            <Col md={12} lg={10} xl={8}
             className="flex-left p-5 relative">
               <Fade bottom>
               <h5 className="font-weight-bold pb-5">intro</h5>
@@ -60,7 +60,7 @@ export default function Home({data}) {
           placeholderStyle={{ backgroundColor: `black` }}
           style={{position: 'absolute', right: '0', top: '0', zIndex: '0'}}
           fluid={data.imageThree.childImageSharp.fluid} alt="" />
-          <Col sm={12} lg={8} xl={10} 
+          <Col sm={12} md={12} lg={10} xl={8} 
           className="flex-left text-lightorange text-shadow p-5">
             <Fade bottom>
             <h5 className="font-weight-bold pb-5 mb-auto">about me</h5>
@@ -181,7 +181,7 @@ export default function Home({data}) {
         </Fade>
 
         <Fade bottom>
-        <Row className="min-h-100 p-0 m-0">
+        <Row className="min-h-100 p-0 m-0 relative">
           <Img 
           className="img-full h-100" 
           durationFadeIn={1500}
