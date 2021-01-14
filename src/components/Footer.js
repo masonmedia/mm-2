@@ -20,7 +20,7 @@ export default function Footer() {
                                 <Link to="/about">
                                     <li>About</li>
                                 </Link>
-                                <Link to="projects/">
+                                <Link to="/projects">
                                     <li>Projects</li>
                                 </Link>
                                 <Link to="/design">
