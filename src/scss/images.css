@@ -28,6 +28,12 @@
   animation-timing-function: linear;
 }
 
+@media (max-width: 601px) {
+  .bg-knockout {
+    background-size: 300%;
+  }
+}
+
 /* background image animation */
 @-webkit-keyframes moving-background {
   0% {
