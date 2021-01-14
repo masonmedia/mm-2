@@ -27,9 +27,7 @@ export default function About() {
                   className="img-full" 
                   style={{position: 'absolute', right: '0', zIndex: '0'}}
                   fluid={data.imageOne.childImageSharp.fluid} alt="" />
-                  <Fade left>
                     <div className="absolute top left z-0 h-100 w-100" style={{background: 'rgba(0,0,0,0.2)'}}></div>
-                  </Fade>
                   <Col lg={12}
                   className="flex-left p-5">
                       <h1 className="site-title text-lowercase mb-0 fade-down">ab<span className="text-teal text-shadow">out</span></h1>
