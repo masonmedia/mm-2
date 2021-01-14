@@ -25,6 +25,7 @@ module.exports = {
     `gatsby-plugin-sharp`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-smoothscroll`,
+    `gatsby-plugin-remove-trailing-slashes`,
       {
         resolve: `gatsby-source-filesystem`,
         options: {
