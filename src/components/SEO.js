@@ -26,6 +26,7 @@ export default function SEO() {
       render={data => (
         <Helmet>
             <title>{data.site.siteMetadata.title}</title>
+            <link rel="icon" type="image/png" href="favicon.ico" sizes="16x16" />
             <meta name="description" content={data.site.siteMetadata.description} />
             <meta name="robots" content={data.site.siteMetadata.robots} />
             <meta name="googlebot" content={data.site.siteMetadata.robots} />
