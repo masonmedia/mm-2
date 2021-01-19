@@ -12,7 +12,8 @@ module.exports = {
   /* Your site config here */
   siteMetadata: {
     title: 'Mason Media',
-    description: 'Mason Media is the web development studio of Toronto frontend developer, designer, and copywriter Andrew Mason. We make websites, create custom imagery, and write UX content.',
+    description: 'Mason Media is the web development studio of Toronto frontend developer, UI/graphic designer, and copywriter Andrew Mason. I build websites, create custom imagery, and write UX content.',
+    author: 'Andrew Mason',
     robots: 'index,follow',
     url: 'https://andrewmasonmedia.com',
     type: 'website',

@@ -12,6 +12,7 @@ export default function SEO() {
         site {
           siteMetadata {
             description
+            author
             image
             imageAlt
             robots
@@ -30,6 +31,7 @@ export default function SEO() {
             <meta name="description" content={data.site.siteMetadata.description} />
             <meta name="robots" content={data.site.siteMetadata.robots} />
             <meta name="googlebot" content={data.site.siteMetadata.robots} />
+            <meta name="author" content={data.site.siteMetadata.author} />
             {/* FB */}
             <meta property="og:url" content={data.site.siteMetadata.url} />
             <meta property="og:type" content="website" />
